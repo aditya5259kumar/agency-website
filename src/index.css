@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+/* your other CSS rules start here */
+* {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+}
+
+@theme {
+  --color-primary: #5044e5;
+}

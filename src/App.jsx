@@ -1,13 +1,15 @@
-import React from 'react'
-import './App.css'
+import React,{useState} from "react";
+import "./App.css";
+import Navbar from "./components/Navbar";
 
 function App() {
+  const [theme, settheme] = useState("light");
 
   return (
-    <>
-    <h1>hello</h1>
-    </>
-  )
+    <div className="dark:bg-white relative">
+      <Navbar theme={theme} settheme={settheme} />
+    </div>
+  );
 }
 
-export default App
+export default App;
